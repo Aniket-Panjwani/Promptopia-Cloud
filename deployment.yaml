@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: promptopia-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: promptopia
+  template:
+    metadata:
+      labels:
+        app: promptopia
+    spec:
+      containers:
+        - name: promptopia-container
+          image: dk3775/promptopia-s7:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: CLOUDANT_URL
+              valueFrom:
+                secretKeyRef:
+                  name: cloudant-secret
+                  key: CLOUDANT_URL
+            - name: CLOUDANT_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: cloudant-secret
+                  key: CLOUDANT_API_KEY
+            - name: CLOUDANT_DB_NAME
+              value: promptopia-main-db
+            - name: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: clerk-secret
+                  key: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+            - name: CLERK_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: clerk-secret
+                  key: CLERK_SECRET_KEY

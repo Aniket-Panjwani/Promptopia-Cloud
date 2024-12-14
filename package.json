@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "my-new-app",
+=======
   "name": "promptopia",
+>>>>>>> 3060b94a7a6f1c530a30c0c4ee2d6bb9d68e547f
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +13,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
+    "@clerk/clerk-sdk-node": "4.6.1",
+    "@clerk/nextjs": "^6.5.1",
+    "@ibm-cloud/cloudant": "^0.11.0",
+    "cross-spawn": "^7.0.5",
+    "next": "^15.0.3",
+    "next-auth": "^4.24.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5"
+=======
     "@ibm-watson/assistant-web-chat-react": "^1.1.1",
     "autoprefixer": "10.4.14",
     "bcrypt": "^5.1.0",
@@ -20,5 +45,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2"
+>>>>>>> 3060b94a7a6f1c530a30c0c4ee2d6bb9d68e547f
   }
 }

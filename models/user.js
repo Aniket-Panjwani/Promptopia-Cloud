@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+class User {
+  constructor(data) {
+    this.email = data.email;
+    this.username = data.username;
+    this.image = data.image;
+    this._id = data._id;
+    this._rev = data._rev;
+  }
+}
+=======
 import { Schema, model, models } from 'mongoose';
 
 const UserSchema = new Schema({
@@ -17,5 +28,6 @@ const UserSchema = new Schema({
 });
 
 const User = models.User || model("User", UserSchema);
+>>>>>>> 3060b94a7a6f1c530a30c0c4ee2d6bb9d68e547f
 
 export default User;

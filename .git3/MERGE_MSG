@@ -1,0 +1,23 @@
+Merge branch 'dev' of https://github.com/Aniket-Panjwani/Promptopia-Cloud into dev
+
+# Conflicts:
+#	app/api/prompt/[id]/route.js
+#	app/api/prompt/new/route.js
+#	app/api/prompt/route.js
+#	app/api/users/[id]/posts/route.js
+#	app/create-prompt/page.jsx
+#	app/layout.jsx
+#	app/page.jsx
+#	app/profile/[id]/page.jsx
+#	app/profile/page.jsx
+#	app/update-prompt/page.jsx
+#	components/Feed.jsx
+#	components/Nav.jsx
+#	components/Profile.jsx
+#	components/PromptCard.jsx
+#	models/prompt.js
+#	models/user.js
+#	package-lock.json
+#	package.json
+#	tailwind.config.js
+#	utils/database.js

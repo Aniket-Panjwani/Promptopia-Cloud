@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import Feed from "@/components/Feed";
+=======
 import Feed from "@components/Feed";
+>>>>>>> 3060b94a7a6f1c530a30c0c4ee2d6bb9d68e547f
 
 const Home = () => (
   <section className='w-full flex-center flex-col'>
